@@ -1,0 +1,37 @@
+.blog{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 0;
+}
+.cardBlog{
+    width: 300px ;
+    border: 2px solid rgb(233, 233, 233);
+    border-radius: 10px;
+    padding: 10px;
+    font-family: "yekan";
+    text-align: end;
+    text-decoration: none;
+    color: #353535;
+}
+
+.imgBlog{
+    height: 200px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.imgBlog img{
+    width: 100%;
+    border-radius: 10px;
+}
+.cardBlog button{
+    padding: 10px 50px;
+    border: none;
+    background-color: var(--colorHover);
+    border-radius: 5px;
+    color: white;
+    font-family: "yekan";
+    margin: 10px 0 ;
+    cursor: pointer;
+}

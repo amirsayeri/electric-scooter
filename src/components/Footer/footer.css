@@ -1,0 +1,124 @@
+.footer {
+  background-color: rgb(244, 244, 244);
+  padding: 50px 0 ;
+  font-size: 13px;
+}
+.box_top_footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.partOne_footer {
+  font-family: "yekan";
+  line-height: 40px;
+  text-align: end;
+}
+.partOne_footer ul{
+    list-style-type: none;
+    text-align: end;
+}
+.box_ulOne li {
+  cursor: pointer;
+  color: gray;
+}
+.box_ulOne li:hover{
+    color: var(--colorHover);
+}
+
+.partTwo_footer {
+  font-family: "yekan";
+  line-height: 40px;
+  text-align: end;
+}
+.partTwo_footer ul{
+    list-style-type: none;
+    text-align: end;
+}
+
+.partTree_footer {
+    font-family: "yekan";
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.partTree_footer h3{
+    text-align: center;
+}
+.imgEnamad{
+    width: 150px;
+    margin: 10px 0 ;
+}
+.imgEnamad img{
+    width: 100%;
+    border-radius: 10px;
+}
+.menu_footer{
+    text-align: start;
+    direction: rtl;
+    padding-right: 60px;
+}
+.menuItem_footer{
+    cursor: pointer;
+    color: gray;
+}
+.menuItem_footer:hover{
+    color: var(--colorHover);
+}
+
+.partFor_footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 300px;
+    text-align: end;
+    font-family: "yekan";
+}
+.partFor_footer h2{
+    margin-bottom: 10px;
+}
+.partFor_footer p {
+    line-height: 25px;
+    color: gray;
+}
+
+.box_bottom_footer{
+    text-align: end;
+    padding: 20px 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    font-family: "yekan";
+}
+.boxImg_bottomFooter{
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+}
+.boxImg_bottomFooter img{
+    width: 10%;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+.boxImg_bottomFooter img:hover{
+    transform: translateY(-5px);
+}
+
+
+
+
+@media(max-width : 900px) {
+    .box_top_footer{
+        gap: 30px;
+    }
+    .box_bottom_footer{
+        padding: 20px;
+        align-items: center;
+    }
+    .boxImg_bottomFooter{
+        justify-content: center;
+    }
+}

@@ -1,0 +1,13 @@
+.BlogDetail{
+    font-family: "yekan";
+    text-align: end;
+}
+.BlogDetail h3{
+    margin: 10px 0 ;
+}
+.BlogDetail p{
+    margin: 20px 0 ;
+}
+.imgDetailBlog img {
+    width: 100%;
+}

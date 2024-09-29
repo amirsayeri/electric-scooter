@@ -1,0 +1,10 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --colorBlack : #303030 ; 
+    --colorHover : rgb(64, 93, 238);
+}

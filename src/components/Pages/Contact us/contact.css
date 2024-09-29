@@ -1,0 +1,114 @@
+.box_contact{
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 30px;
+    width: 85%;
+    margin: 30px auto;
+    font-family: "yekan";
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+
+/* left */
+.left_contact{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    /* width: 90%; */
+}
+.phoneBox{
+    display: flex;
+    direction: rtl;
+    align-items: center;
+    gap: 10px;
+}
+.phoneBox img {
+    width: 30px;
+}
+.headphoneBox{
+    display: flex;
+    direction: rtl;
+    align-items: center;
+    gap: 10px;
+}
+.headphoneBox img {
+    width: 30px;
+}
+.letterBox{
+    display: flex;
+    direction: rtl;
+    align-items: center;
+    gap: 10px;
+}
+.letterBox img {
+    width: 30px;
+}
+.locationBox{
+    display: flex;
+    direction: rtl;
+    align-items: center;
+    gap: 10px;
+}
+.locationBox img {
+    width: 30px;
+}
+
+/* right */
+
+.right_contact{
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formContact{
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    gap: 10px;
+}
+.formContact input{
+    padding: 10px;
+    border: 1px solid lightgray;
+    outline: none;
+    font-family: "yekan";
+
+}
+.formContact textarea {
+    height: 200px;
+    padding: 10px;
+    font-family: "yekan";
+    outline: none;
+    border: 1px solid lightgray;
+}
+.inputBtn_contact{
+    width: 40%;
+    cursor: pointer;
+}
+.inputBtn_contact:hover{
+    background-color: var(--colorHover);
+    color: white;
+}
+
+
+
+@media (max-width : 1300px) {
+    .box_contact{
+        justify-content: center;
+        gap: 10px;
+    }
+    .right_contact{
+        width: 100%;
+    }
+}
+
+@media (max-width : 920px) {
+    .left_contact{
+        width: 100%;
+    }
+    .right_contact{
+        width: 100%;
+    }
+}

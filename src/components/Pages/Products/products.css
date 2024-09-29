@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "yekan";
+  src: url(../../../public/font/BYekan+.ttf);
+}
+
+.boxSearchBtn{
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+  padding: 30px ;
+}
+.searchBtn{
+  padding: 10px 30px;
+  border: none;
+  cursor: pointer;
+  transform: translateX(5rem);
+  border-radius: 2px;
+  font-family: "yekan";
+}
+.searchBtn:hover{
+  background-color: var(--colorHover);
+  color: white;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px ;
+}
+
+.card {
+  width: 300px;
+  border: none;
+  box-shadow: 0 0 5px lightgray;
+  border-radius: 5px;
+  font-family: "yekan";
+  cursor: pointer;
+  text-decoration: none;
+  color: #353535;
+}
+.card:hover{
+  box-shadow: 0 5px 15px rgba(205, 205, 205, 0.613) ;
+}
+.imgCard img {
+  width: 100%;
+}
+.descriptionCard {
+  padding: 10px;
+}
+.descriptionCard h3{
+    text-align: end;
+    margin-bottom: 10px;
+}
+.descriptionCard p {
+  direction: rtl;
+  text-align: end;
+}
+
+
+@media (max-width : 650px) {
+  .boxSearchBtn{
+    justify-content:center;
+    flex-wrap: wrap;
+  }
+  .searchBtn{
+    transform: none;
+  }
+}
+
+@media only screen and (max-width : 355px) {
+  .boxSearchBtn{
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

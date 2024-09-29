@@ -1,0 +1,149 @@
+@font-face {
+  font-family: "yekan";
+  src: url(../../../public/font/BYekan+.ttf);
+}
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px ;
+  box-shadow: 0 0 3px lightgray;
+}
+
+/* box profile and login */
+.profile {
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.box_profile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.profile img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+/* box search in navbar */
+.inputSearch_navbar {
+  padding: 6px;
+  display: flex;
+  align-items: center;
+}
+.input_navbar {
+  border: none;
+  border-radius: 5px 0 0 5px;
+  width: 15rem;
+  border: 2px solid rgba(211, 211, 211, 0.434);
+  height: 2.4rem;
+  padding: 0 10px;
+  outline: none;
+  text-align:end;
+}
+.searchBtn_navbar {
+  padding: 10px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-family: "yekan";
+}
+
+/* box logo */
+.logo_navbar img {
+  width: 100%;
+  cursor: pointer;
+}
+
+/* menu navbar */
+.navbar {
+  padding: 10px;
+  display: flex;
+}
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  align-items: center;
+  list-style-type: none;
+  direction: rtl;
+  font-family: "yekan";
+  font-size: 15px;
+}
+.menu_Item {
+  color: var(--colorBlack);
+  text-decoration: none;
+}
+.menu_Item:hover {
+  color: var(--colorHover);
+  text-decoration: none;
+}
+
+/* menu burger */
+.box_burger {
+  align-items: center;
+  display: none;
+  z-index: 10;
+}
+.boxMenu {
+  text-align: center;
+  position: absolute;
+  top: 5rem;
+  right: -18rem;
+  width: 20%;
+  height: 80vh;
+  text-align: end;
+  list-style-type: none;
+  background-color: rgb(211, 211, 211);
+  display: none;
+}
+.burgerBtn {
+  width: 30px;
+  cursor: pointer;
+}
+.menu_Item_burger {
+  margin: 20px;
+  display: block;
+  text-decoration: none;
+  color: var(--colorBlack);
+  font-family: "yekan";
+  line-height: 2rem;
+}
+.menu_Item_burger:hover {
+  color: var(--colorHover);
+}
+
+
+
+
+
+@media only screen and (max-width : 550px){
+  .navbar{
+    display: none;
+  }
+  .inputSearch_navbar{
+    display: none;
+  }
+  .box_burger{
+    display: block flex;
+  }
+  .boxMenu{
+    transform: translate(-5px , -5px);
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width :289px){
+  .boxMenu{
+    transform: translate(-5px , 25px);
+    width: 200px;
+  }
+}

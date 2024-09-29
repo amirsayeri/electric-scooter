@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "yekan";
+  src: url(../../../public/font/BYekan+.ttf);
+}
+
+.detailTwo {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-family: "yekan";
+  align-items: center;
+}
+
+.imgDetailTwo {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.imgDetailTwo img {
+  width: 100%;
+}
+
+.descDetailTwo {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: end;
+  text-align: end;
+  width: 50%;
+}
+
+
+
+@media (max-width : 1200px){
+    .descDetailTwo{
+        width: 100%;
+        padding: 50px;
+    }
+}
